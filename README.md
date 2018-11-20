@@ -49,21 +49,21 @@ Getting started (OneDrive for Business)
 
 Before you can use this tool, create an application in the [Microsoft Azure Management Portal](https://manage.windowsazure.com) to generate your custom Client ID and Client secret.
 
-    1. Navigate to Active directory
+    1. Navigate to "Azure Active Directory"
     2. Select your Directory
-    3. Navigate to Applications tab
-    4. Press Add
-    5. Select "Add an application my organization developing"
-    6. Choose Name and select "Web application and/or web API"
+    3. Navigate to "App registrations tab"
+    4. Press "New Application Registration"
+    5. Fill in the "Name" field
+    6. Select "Web app / API"
     7. In a "Sign-on URL" write https://login.microsoftonline.com/
-    8. In an "APP ID URI" write https://onedrive.live.com/about/business/
-    9. Submit form
-    10. Now open your new application and select Configure tab
-    11. Change "Reply URL" field to https://onedrive.live.com/about/business/
-    12. Add an application key. Select 1 year key, 2 years key will not work. Press Save and copy the generated Secret
+    8. Submit form
+    9. Now open your new application and click "Settings"
+    10. Click "Properties" and fill in "APP ID URI" with https://onedrive.live.com/about/business/
+    11. Click "Reply URL" and change field to https://onedrive.live.com/about/business/
+    12. Add "Keys" to add an application key. Select 1 year key, 2 years key will not work. Press Save and copy the generated Secret
     13. Also copy your "Client ID"
-    14. In a "Permissions to other applications" press "Add application"
-    15. Select "Office 365 SharePoint Online" and "Windows Azure Active Directory"
+    14. Click “Required permissions"
+    15. Add "Office 365 SharePoint Online" ("Windows Azure Active Directory" was added by default)
     16. Grant "Sign in and read user profile" delegated permission to "Windows Azure Active Directory"
     17. Grant "Read user files" and "Read and write user files" delegated permissions to "Office 365 SharePoint Online"
     18. Save changes
